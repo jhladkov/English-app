@@ -1,0 +1,54 @@
+.result-inner{
+  display: flex;
+  .result-inner-item{
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid darkgray;
+    padding: 10px;
+    transition: all .2s;
+    user-select: none;
+    .before{
+      position: absolute;
+      right: -13px;
+      top: -18px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: red;
+    }
+    .after{
+      z-index: 2;
+      position: absolute;
+      right: -8px;
+      top: -12px;
+    }
+    &:hover{
+      background-color: springgreen;
+      a{
+        color: white;
+      }
+    }
+  }
+}
+.result{
+  margin-bottom: 50px;
+}
+.result-inner-item {
+  position: relative;
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid darkgray;
+  padding: 10px;
+  transition: all .2s;
+  user-select: none;
+  &:hover{
+    background-color: springgreen;
+    color: white;
+    a{
+      color: white;
+    }
+  }
+}

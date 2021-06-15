@@ -1,0 +1,13 @@
+.header{
+  padding: 20px 0;
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: center;
+  background: rgb(227,130,244);
+  background: linear-gradient(180deg, rgba(227,130,244,1) 23%, rgba(185,138,252,1) 61%);
+  .header-logo{
+    user-select: none;
+    font-size: 35px;
+    font-weight: 700;
+  }
+}

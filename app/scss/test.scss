@@ -1,0 +1,30 @@
+.wrapper-list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .wrapper-title{
+    color: black;
+    margin-bottom: 30px;
+    position: absolute;
+    left: 48%;
+    top: -54px;
+  }
+  .inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-top: 60px;
+    .card-answer{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      padding: 20px;
+      margin: 0 10px 50px 0;
+      width: 200px;
+      cursor: pointer;
+    }
+  }
+}
