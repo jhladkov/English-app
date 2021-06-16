@@ -1,9 +1,9 @@
 const wordsList = document.querySelector('.words')
-const alreadyList = JSON.parse(localStorage.getItem('alreadyKnow'))
+const alreadyKnowList = JSON.parse(localStorage.getItem('alreadyKnow'))
 
-const addHTML = (alreadyListTrue,nothing) => {
-    if (alreadyListTrue) {
-        alreadyList.forEach(item => {
+const addHTML = (alreadyKnowListTrue,nothing) => {
+    if (alreadyKnowListTrue) {
+        alreadyKnowList.forEach(item => {
             wordsList.insertAdjacentHTML("afterbegin", `
             <p class="words-item">${item[0]} - ${item[1]}</p>
     `)
@@ -16,6 +16,6 @@ const addHTML = (alreadyListTrue,nothing) => {
     }
 }
 window.onload = () => {
-    if (alreadyList) addHTML(true)
+    if (alreadyKnowList) addHTML(true)
     else addHTML(false,true)
 }

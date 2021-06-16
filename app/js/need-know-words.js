@@ -19,6 +19,6 @@ const addHTML = (needKnowTrue, nothing) => {
 }
 
 window.onload = () => {
-    if (needKnowList) addHTML(true)
+    if (needKnowList && needKnowList.length > 0) addHTML(true)
     else addHTML(false, true)
 }
