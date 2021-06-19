@@ -1,25 +1,25 @@
 .learn-word{
   .learn-word-wrapper{
     text-align: center;
-    .learn-word-title{
+    .list-title{
       color: blueviolet;
       margin-bottom: 30px;
     }
-    .learn-word-inner{
+    .list-wrapper-inner{
       display: flex;
       flex-direction: column;
       align-items: center;
       margin: 0 20px 20px 0;
-      .english-word{
+      .list-wrapper-english-word{
         font-weight: 700;
       }
-      .rus-word{
+      .list-wrapper-rus-word{
         margin-bottom: 10px;
       }
       .already{
         background-color: darkcyan !important;
       }
-      .learn-word{
+      .list-wrapper-word{
         padding: 10px;
         width: 116px;
         background-color: springgreen;
@@ -31,14 +31,15 @@
     }
   }
 }
-.wrapper{
+.list-wrapper{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.more{
+.list-more{
   width: 116px;
   padding: 10px;
+  margin-right: 16px;
   margin-top: 20px;
   background-color: #b98afc;
   border: 1px solid transparent;

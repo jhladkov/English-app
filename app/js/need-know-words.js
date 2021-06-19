@@ -1,18 +1,18 @@
-const needKnowWordsList = document.querySelector('.words')
+const needKnowWordsList = document.querySelector('.words-list')
 const needKnowList = JSON.parse(localStorage.getItem('needKnow'))
-const startTest = document.querySelector('.result-inner-item')
+const startTest = document.querySelector('.words-test-start')
 
 const addHTML = (needKnowTrue, nothing) => {
     if (needKnowTrue) {
         needKnowList.forEach(item => {
             needKnowWordsList.insertAdjacentHTML("afterbegin", `
-            <p class="words-item">${item[0]} - ?</p>
+            <li class="words-list-item">${item[0]} - ?</li>
     `)
         })
     }
     if (nothing) {
         needKnowWordsList.insertAdjacentHTML("afterbegin", `
-            <p class="words-item">Вы ничего не добавили</p>
+            <li class="words-list-item">Вы ничего не добавили</li>
         `)
         startTest.style.display = 'none'
     }

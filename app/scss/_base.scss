@@ -23,6 +23,7 @@ li, ul{
   margin: 0;
   padding: 0;
   list-style: none;
+  color: black;
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -52,4 +53,9 @@ hr{
 
 .words-item{
   margin-bottom: 20px;
+}
+@media (max-width: 381px) {
+  .result-inner-item-link{
+    font-size: 12px;
+  }
 }
