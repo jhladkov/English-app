@@ -447,7 +447,7 @@ let rusWordsArr = ['способный', 'способность', 'о', 'выш
     'наслаждаться',
     'достаточно',
 ]
-
+//
 const updateDOM = () => {
     learnWordInner = Array.from(document.querySelectorAll('.list-wrapper-inner'))
     alreadyKnowButton = Array.from(document.querySelectorAll('.already'))
